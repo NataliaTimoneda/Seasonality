@@ -15,6 +15,7 @@ group.tab<-t(otu_table(physeq_glom))
 
 ```
 
+## CA
 Una vegada tenim la taula de dades (columnes la taxonomia, linies mostres) calculem la estacionalitat.
 
 -Opcions a canviar:
@@ -28,7 +29,7 @@ S'obtindrà un resultat per cada columna del input.
 seasonality.test(group.tab, n = 1000, probs = c(0.025, 0.975),  lag.max = 120, na.action = na.pass)
 
 ```
-Per realitzar el gràfic ACF
+##Per realitzar el gràfic ACF
 
 Opcions:
 * frequency: indicar la estacionalitat a estudiar (anual: 12)
