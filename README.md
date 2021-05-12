@@ -15,7 +15,7 @@ group.tab<-t(otu_table(physeq_glom))
 
 ```
 
-## CA
+## Càlcul RI i SI. Taula de resultats 
 Una vegada tenim la taula de dades (columnes la taxonomia, linies mostres) calculem la estacionalitat.
 
 -Opcions a canviar:
