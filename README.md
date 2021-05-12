@@ -27,13 +27,14 @@ S'obtindrà un resultat per cada columna del input.
 
 seasonality.test(group.tab, n = 1000, probs = c(0.025, 0.975),  lag.max = 120, na.action = na.pass)
 
-```{r}
+```
 Per realitzar el gràfic ACF
 
 Opcions:
 * frequency: indicar la estacionalitat a estudiar (anual: 12)
 * start: valors al eix de les X, el primer número i increment a cada punt.
+
 ```{r}
 times<-ts(sg.tab[,5], frequency = 12, start = c(2004,1))
 plot.plot.ts(times)
-```{r}
+```
