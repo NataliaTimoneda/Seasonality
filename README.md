@@ -36,13 +36,21 @@ esta<-seasonality.test(group.tab, n = 1000, probs = c(0.025, 0.975),  lag.max = 
 | asv2 | 3.96 | 3.22 | 2.65 | 3.89 | SIGNIFICANTLY HIGHER |
 | asv4 | 3.03 | 2.61 | 2.45 | 2.83 | SIGNIFICANTLY HIGHER |
 
-## Per realitzar el gràfic ACF
+##Per visualitzar la distribució 
 
 Opcions:
 * frequency: indicar la estacionalitat a estudiar (anual: 12)
 * start: valors al eix de les X, el primer número i increment a cada punt.
 
 ```{r}
-times<-ts(sg.tab[,5], frequency = 12, start = c(2004,1))
+times<-ts(group.tab, frequency = 12, start = c(2004,1))
 plot.plot.ts(times)
+```
+
+##Per realitzar el gràfic ACF
+
+En aquest cas no es pot plotar més d'una variable simultaneament, s'ha de realitzar 1 a 1.
+
+```{r}
+acf(group.tab[,1])
 ```
