@@ -46,7 +46,7 @@ Opcions:
 times<-ts(group.tab, frequency = 12, start = c(2004,1))
 plot.plot.ts(times)
 ```
-
+![alt text](https://github.com/NataliaTimoneda/Seasonality/dsitribucio.png?raw=true)
 ##Per realitzar el gràfic ACF
 
 En aquest cas no es pot plotar més d'una variable simultaneament, s'ha de realitzar 1 a 1.
