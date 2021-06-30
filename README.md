@@ -55,3 +55,4 @@ En aquest cas no es pot plotar més d'una variable simultaneament, s'ha de reali
 ```{r}
 acf(group.tab[,1])
 ```
+![ACF](https://user-images.githubusercontent.com/25608100/124014261-95440a80-d9e3-11eb-817f-1fcb55a8798a.png)
